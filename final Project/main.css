@@ -1,0 +1,359 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Home page css */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background-color: black
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+nav {
+    background-color: white;
+    margin-bottom: 10%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    display: inline;
+    flex-direction: column;
+    padding: 2%;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+a:hover {
+    background-color: rgb(205, 156, 50)
+}
+
+.details {
+    background-color: rgb(205, 156, 50);
+    margin: 10px;
+
+}
+
+.details img {
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 2%;
+    animation: rotate 2s;
+    transition: transform 0.3s ease-in-out;
+}
+
+p {
+    font-size: 16px;
+    margin: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    animation: fadeInUp 5s ease-in-out;
+}
+
+.details h2 {
+    margin: 2%;
+    font-size: medium;
+    color: white;
+    animation: flash 1s infinite alternate;
+}
+
+h1 {
+    animation: pulse 1s infinite;
+}
+
+/* Animation code */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animation code ends here */
+.footer p {
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+    bottom: 0;
+}
+/* css code for portfolio design */
+
+#portfolio {
+    background-color: rgb(205, 156, 50);
+    margin: 10px;
+}
+
+#portfolio h2 {
+    padding-left: 2%;
+}
+
+.project {
+    margin: 2%;
+}
+
+.project p {
+    padding-bottom: 2%;
+}
+
+.programmer img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#skills {
+    display: flex;
+}
+
+.programming-skills {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+/* Contact form css */
+
+.formContainer {
+    background-color: rgb(205, 156, 50);
+    margin: 2%;
+    /* width: 50%; */
+}
+
+.formContainer h2 {
+    margin-left: 2%;
+    padding-top: 2%;
+}
+
+#social-links {
+    display: flex;
+}
+
+.social-media {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#contactForm {
+    background-color: #D3D3D3;
+    color: white;
+    /* margin: 3%; */
+}
+
+#contactForm label {
+    margin-left: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: black;
+    height: 1px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+#info p {
+    font-size: medium;
+}
+
+.button {
+    display: flex;
+    background-color: rgb(205, 156, 50);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.button:hover {
+    background-color: rgb(211, 112, 14);
+}
+
+/* Responsive layout for large screen */
+@media screen and (min-width:900px) {
+    body {
+        width: 100%;
+    }
+
+
+
+
+    header {
+        margin-left: 1%;
+        width: 95%;
+        display: flex;
+        float: left;
+    }
+
+    #info p {
+        display: flex;
+        float: right;
+    }
+
+    .formContainer {
+        width: 50%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #contactForm {
+        width: 100%;
+        height: 100%;
+    }
+
+    textarea {
+        vertical-align: middle;
+        margin-top: 2%;
+        width: 55%;
+
+    }
+
+    input[type="text"],
+    [type="email"] {
+        width: 40%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    #portfolio {
+        width: 90%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+    }
+
+
+    .details {
+        display: flex;
+    }
+
+    .details img {
+        display: flex;
+        width: 50%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    nav {
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        margin-left: 5%;
+    }
+
+    .programming-skills {
+        display: flex;
+        width: 90%;
+    }
+
+    .footer {
+        margin-bottom: 0%;
+    }
+
+}
