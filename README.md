@@ -29,11 +29,11 @@ Consise text used for all the images that provides the details for each images f
 # Keyword Optimization 
 use of meta tags like (Title, description keywords) for better search results as relevant terms that will actually target audience when searched based on the key points.
 
- <meta name="keywords"content="fullstack Developer,web developer, html,css,javascript,portfolio, Gudwin Gupta, skills, contact, ">
+ <meta name="keywords"content="fullstack Developer,web developer, html,css,javascript, Gudwin Gupta, skills, contact, ">
  
  <meta name="description"content="Fullstack developer- problem-solver, a creative thinker, ideas into reality Want to do great in tech industry">
  
-<title>fullstack-Developer Gudwin-skills</title>
+<title>fullstack-Developer</title>
 
 # Social Media Links 
 Links used to naviagte user through the Linkedin profile
