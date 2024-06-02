@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    background: #412610;
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #231709;
+    border-radius: 10px;
+    width: 40%;
+    float: right;
+    margin: 5% 50px;
+    padding-left: 30px;
+}
+
+ul li {
+    /* display: inline; */
+    padding: 20px 0;
+    list-style: none;
+
+}
+
+ul li a {
+    padding: 15px 20px;
+    text-decoration: none;
+    list-style: none;
+    color: #f1e9d6;
+}
+
+.left-side h1 {
+    color: #231709;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.left-side h2 {
+    color: #00804A;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 50%;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    padding: 25px;
+}
+
+.right-side {
+    width: 50%;
+    padding-left: 100px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.details h1 {
+    font-family: sans-serif;
+    margin-top: 25px;
+}
+
+.details p {
+    font-family: Pathway Gothic One;
+}
+
+footer {
+    background-color: #231709;
+    color: #f1e9d6;
+    padding: 25px;
+    clear: both;
+}
+
+footer a {
+    color: #f1e9d6;
+    text-decoration: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Media queries for responsive layout of 900 px as required */
+@media screen and (max-width: 900px) {
+    .head {
+        /* height: 150px; */
+        width: 100%;
+        text-align: center;
+        /* position: sticky; */
+
+    }
+
+
+    ul {
+        margin: 15px;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 0 !important;
+        padding: 10px;
+    }
+
+    ul li {
+        width: 100%;
+        list-style: none;
+        text-decoration: none;
+
+    }
+
+    .right-side {
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-side h1 {
+        width: 100%;
+        padding: 0;
+        margin-top: 15px;
+        font-size: larger;
+    }
+
+    .left-side h2 {
+        width: 100%;
+        color: #00804A;
+    }
+
+    .details p {
+        width: 100%;
+    }
+
+    .left-side .image {
+        width: 85%;
+        padding-right: 77px;
+        margin-right: 100px;
+
+    }
+
+    .main {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    footer {
+        margin-top: 15px;
+        text-align: center;
+        clear: both;
+    }
+}
