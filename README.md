@@ -1,6 +1,5 @@
-# Web Project
+# Web
 # Gudwin Gupta
-# Student ID - 1202507
 
 # Description of Design Principles
 
